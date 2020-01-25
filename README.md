@@ -6,22 +6,22 @@ Github Action for Sending Dingtalk robot messages.
 
 ## Environment Variables
 
-- DINGTALK_WEBHOOK: dingtalk webhook url
-- DINGTALK_SIGNATURE: dingtalk webhook signature
+- DINGTALK_ACCESS_TOKEN: dingtalk access token
+- DINGTALK_SECRET: dingtalk secret
 
 ## How to Use
 
 ```
-- name: Sending Dingtalk Message
-uses: x-actions/dingtalk@master
-with:
-  DINGTALK_ACCESS_TOKEN: ${{ secrets.DINGTALK_ACCESS_TOKEN }}
-  DINGTALK_SECRET: ${{ secrets.DINGTALK_SECRET }}
-  MSGTYPE: markdown
-  TEXT: |
-    # Noti
-    > Build Github Action Done.
-    > ^_^
+    - name: Sending Dingtalk Message
+      uses: x-actions/dingtalk@master
+      env:
+        DINGTALK_ACCESS_TOKEN: ${{ secrets.DINGTALK_ACCESS_TOKEN }}
+        DINGTALK_SECRET: ${{ secrets.DINGTALK_SECRET }}
+        MSGTYPE: markdown
+        TEXT: |
+          # Noti
+          > Build Github Action Done.
+          > ^_^
 ```
 
 ## Options

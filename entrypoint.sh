@@ -8,6 +8,6 @@ TEXT=${TEXT:-}
 
 echo "## Sending message ##################"
 
-dingtalk -accessToken ${DINGTALK_ACCESS_TOKEN} -secret ${DINGTALK_SECRET} -msgtype ${MSGTYPE} -text ${TEXT}
+dingtalk -accessToken "${DINGTALK_ACCESS_TOKEN}" -secret "${DINGTALK_SECRET}" -msgtype "${MSGTYPE}" -text "${TEXT}"
 
 echo "## Done. ##################"
