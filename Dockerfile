@@ -1,19 +1,19 @@
-# reate by xiexianbin, For Github Hugo Actions 
+# create by xiexianbin, Github Action for Dingtalk Notification
 FROM alpine:latest
 
 # Dockerfile build cache 
 ENV REFRESHED_AT 2020-01-11
 
-LABEL "com.github.actions.name"="Hugo Actions"
-LABEL "com.github.actions.description"="Building Hugo static sites."
+LABEL "com.github.actions.name"="Github Action for Dingtalk Notification"
+LABEL "com.github.actions.description"="Github Action for Dingtalk Notification."
 LABEL "com.github.actions.icon"="home"
 LABEL "com.github.actions.color"="green"
-LABEL "repository"="http://github.com/xiexianbin/hugo-actions"
-LABEL "homepage"="http://github.com/xiexianbin/hugo-actions"
+LABEL "repository"="http://github.com/xiexianbin/dingtalk"
+LABEL "homepage"="http://github.com/xiexianbin/dingtalk"
 LABEL "maintainer"="xiexianbin<me@xiexianbin.cn>"
 
-LABEL "Name"="Github Hugo Actions"
-LABEL "Version"="0.1.0"
+LABEL "Name"="Github Action for Dingtalk Notification"
+LABEL "Version"="1.0.0"
 
 ENV LC_ALL C.UTF-8
 ENV LANG en_US.UTF-8

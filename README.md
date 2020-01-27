@@ -1,4 +1,4 @@
-# Github Action for Dingtalk
+# Github Action for Dingtalk Notification
 
 ![](https://github.com/x-actions/dingtalk/workflows/dingtalk/badge.svg)
 
@@ -50,4 +50,4 @@ Usage of ./dingtalk:
 
 ## Dingtalk Doc
 
-https://ding-doc.dingtalk.com/doc#/serverapi2/qf2nxq
+- https://ding-doc.dingtalk.com/doc#/serverapi2/qf2nxq
