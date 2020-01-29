@@ -1,4 +1,4 @@
-# Github Action for Dingtalk Notification
+# Github Action for Dingtalk Robot Messages
 
 ![](https://github.com/x-actions/dingtalk/workflows/dingtalk/badge.svg)
 
@@ -18,6 +18,7 @@ Github Action for Sending Dingtalk robot messages.
         DINGTALK_ACCESS_TOKEN: ${{ secrets.DINGTALK_ACCESS_TOKEN }}
         DINGTALK_SECRET: ${{ secrets.DINGTALK_SECRET }}
         MSGTYPE: markdown
+        TITLE: "x-actions dingtalk message"
         TEXT: |
           # Noti
           > Build Github Action Done.

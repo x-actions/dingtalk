@@ -1,0 +1,25 @@
+name: 'Dingtalk Robot Messages'
+description: 'Github Action for Dingtalk Robot Messages'
+author: 'xiexianbin <me@xiexianbin>'
+inputs: 
+  DINGTALK_ACCESS_TOKEN:
+    description: 'robot webhook access token'
+    required: true
+  DINGTALK_SECRET:
+    description: 'robot webhook secret'
+    required: true
+  MSGTYPE:
+    description: 'message type (text, link, markdown, actionCard, feedCard)'
+    default: 'text'
+    required: true
+  TEXT:
+    description: 'content of message'
+    default: 'This is a text'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+branding:
+  color: 'blue'
+  icon: 'message-square'

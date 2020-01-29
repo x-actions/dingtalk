@@ -22,8 +22,8 @@ var messageUrl string
 
 func init() {
 	flag.StringVar(&msgtype, "msgtype", "text", "message type (text, link, markdown, actionCard, feedCard)")
-	flag.StringVar(&accessToken, "accessToken", "" ,"robot webhook access token")
-	flag.StringVar(&secret, "secret", "" ,"robot webhook secret")
+	flag.StringVar(&accessToken, "accessToken", "", "robot webhook access token")
+	flag.StringVar(&secret, "secret", "", "robot webhook secret")
 	flag.StringVar(&title, "title", "This is a title", "title of message")
 	flag.StringVar(&text, "text", "This is a text", "text of message")
 
@@ -45,7 +45,7 @@ func main() {
 	if len(os.Args) < 2 {
 		usage()
 	}
-    var err error
+	var err error
 
 	webhook := "https://oapi.dingtalk.com/robot/send?access_token=" + accessToken
 	r := robot.NewRobot(webhook)

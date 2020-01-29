@@ -1,3 +1,5 @@
 .idea
+.history/
+.DS_Store
 src/dingtalk/dingtalk
 src/dingtalk/.idea
