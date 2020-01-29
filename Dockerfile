@@ -19,19 +19,20 @@ ENV LC_ALL C.UTF-8
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
 
-RUN apk update && apk add --no-cache git bash go && rm -rf /var/cache/apk/*
+RUN apk update && apk add --no-cache git bash go dep && rm -rf /var/cache/apk/*
 
-RUN export GOPATH=`pwd` && \
-    mkdir src && \
-    cd src && \
+RUN mkdir -p /github/actions && \
+    cd /github/actions && \
     git clone https://github.com/x-actions/dingtalk.git && \
-    mv dingtalk dingtalk.bak && \
-    cp -rp dingtalk.bak/src/dingtalk . && \
-    rm -rf dingtalk.bak && \
     cd dingtalk && \
+    export GOPATH=`pwd` && \
+    cd src/dingtalk && \
+    dep ensure && \
     # GOOS=linux GOARCH=amd64 go build -tags netgo && \
     go build && \
-    cp dingtalk /usr/local/bin
+    cp dingtalk /usr/local/bin && \
+    cd / && \
+    rm -rf /github/actions
 
 ADD entrypoint.sh /
 RUN chmod +x /entrypoint.sh

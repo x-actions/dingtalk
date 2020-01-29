@@ -5,14 +5,10 @@ fork from https://github.com/royeo/dingrobot
 ## Build
 
 ```
+git clone https://github.com/x-actions/dingtalk.git
+cd dingtalk
 export GOPATH=`pwd`
-go get github.com/x-actions/dingtalk/src/dingtalk
-```
-
-or
-
-```
-cd dingtalk/
+cd src/dingtalk/
 GOOS=linux GOARCH=amd64 go build -tags netgo
 ```
 
