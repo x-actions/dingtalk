@@ -1,4 +1,4 @@
-# Github Action for Dingtalk Notification
+# Github Action for Dingtalk Robot Messages
 
 ![](https://github.com/x-actions/dingtalk/workflows/dingtalk/badge.svg)
 
