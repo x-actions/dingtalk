@@ -25,6 +25,7 @@ RUN mkdir -p /github/actions && \
     cd /github/actions && \
     git clone https://github.com/x-actions/dingtalk.git && \
     cd dingtalk && \
+    git checkout release/v1 && \
     export GOPATH=`pwd` && \
     cd src/dingtalk && \
     dep ensure && \

@@ -13,7 +13,7 @@ Github Action for Sending Dingtalk robot messages.
 
 ```
     - name: Sending Dingtalk Message
-      uses: x-actions/dingtalk@master
+      uses: x-actions/dingtalk@release/v1
       env:
         DINGTALK_ACCESS_TOKEN: ${{ secrets.DINGTALK_ACCESS_TOKEN }}
         DINGTALK_SECRET: ${{ secrets.DINGTALK_SECRET }}
