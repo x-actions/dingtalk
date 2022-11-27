@@ -7,6 +7,7 @@ fork from https://github.com/royeo/dingrobot
 ```
 git clone https://github.com/x-actions/dingtalk.git
 cd dingtalk
+go mod vendor
 export GOPATH=`pwd`
 cd src/dingtalk/
 GOOS=linux GOARCH=amd64 go build -tags netgo
